@@ -4,9 +4,7 @@ import {
   FiCode, 
   FiSmartphone, 
   FiDatabase, 
-  FiShield, 
   FiTrendingUp, 
-  FiSettings,
   FiArrowRight,
   FiCheck
 } from 'react-icons/fi';

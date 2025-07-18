@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { motion } from 'framer-motion';
 
 const StatsCounter = () => {
@@ -12,7 +12,7 @@ const StatsCounter = () => {
 
   const sectionRef = useRef(null);
 
-  const stats = [
+  const stats = useMemo(() => [
     {
       key: 'projects',
       end: 3,
@@ -41,7 +41,7 @@ const StatsCounter = () => {
       suffix: '',
       icon: '🎓'
     }
-  ];
+  ], []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -80,7 +80,7 @@ const StatsCounter = () => {
     };
 
     animateCounters();
-  }, [isVisible]);
+  }, [isVisible, stats]);
 
   return (
     <section ref={sectionRef} className="py-16 bg-gradient-to-r from-primary-500 to-secondary-500">
