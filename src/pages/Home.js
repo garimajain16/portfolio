@@ -11,7 +11,7 @@ import SocialProof from '../components/SocialProof';
 
 const Home = () => {
   const [typedText, setTypedText] = useState('');
-  const fullText = "Hi, I'm Garima Jain — React Full Stack Developer, Hackathon Finalist & Problem Solver.";
+  const fullText = "Hi, I'm Garima Jain — React Full Stack Developer.";
 
   useEffect(() => {
     let index = 0;
