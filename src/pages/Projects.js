@@ -55,6 +55,24 @@ const Projects = () => {
         views: 0,
       },
     },
+    {
+      id: 3,
+      title: "Zero Waste Delhi",
+      description:
+        "Environmental awareness platform promoting sustainable practices and zero waste lifestyle in Delhi.",
+      longDescription:
+        "A comprehensive web application focused on environmental sustainability and zero waste practices in Delhi. Features include waste management tips, recycling guides, local eco-friendly businesses directory, community engagement tools, and educational resources. Built with modern web technologies to create an engaging user experience that promotes environmental consciousness.",
+      image: "/images/projects/zero-waste-delhi.png",
+      technologies: ["React", "JavaScript", "CSS3", "HTML5", "Netlify"],
+      category: "frontend",
+      github: "https://github.com/garimajain16/ZeroWasteDelhi",
+      live: "https://zerowastedelhi.netlify.app",
+      featured: true,
+      stats: {
+        stars: 0,
+        views: 0,
+      },
+    },
   ];
 
   const categories = [
@@ -70,6 +88,7 @@ const Projects = () => {
       : projects.filter((project) => project.category === filter);
 
   const featuredProjects = projects.filter((project) => project.featured);
+  console.log('Featured projects:', featuredProjects.length, featuredProjects.map(p => p.title));
 
   return (
     <div className="min-h-screen pt-20 pb-16">
@@ -101,7 +120,7 @@ const Projects = () => {
             Featured Projects
           </h2>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProjects.map((project, index) => (
               <motion.div
                 key={project.id}

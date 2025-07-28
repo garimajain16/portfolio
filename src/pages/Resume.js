@@ -230,6 +230,21 @@ const Resume = () => {
 
               <div className="border-l-4 border-green-500 pl-4">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                  Zero Waste Delhi
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-2">
+                  React, JavaScript, CSS3, HTML5, Netlify
+                </p>
+                <ul className="text-gray-600 dark:text-gray-300 list-disc list-inside space-y-1">
+                  <li>Developed environmental awareness platform promoting sustainable practices</li>
+                  <li>Created comprehensive waste management tips and recycling guides</li>
+                  <li>Built local eco-friendly businesses directory with community features</li>
+                  <li>Implemented responsive design for optimal user experience across devices</li>
+                </ul>
+              </div>
+
+              <div className="border-l-4 border-purple-500 pl-4">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                   Visual Graphics Design
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-2">
